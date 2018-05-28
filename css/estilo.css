@@ -1,0 +1,49 @@
+/* Folder formulario.php ABAIXO */
+.cadastro_usuario{
+  width: 340px;
+  height: 300px;
+  margin: 0 auto;
+  border: solid 2px #000;
+}
+.cadastro_usuario p{
+  margin-left: 20px;
+}
+.cadastro_usuario input{
+  width: 300px;
+  height: 28px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.cadastro_usuario button{
+  width: 100px;
+  height: 32px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* Folder lista.php ABAIXO */
+.buscar_id{
+  width: 340px;
+  height: 300px;
+  margin: 0 auto;
+  border: solid 2px #000;
+}
+.buscar_id p{
+  margin-left: 20px;
+}
+.buscar_id input{
+  width: 300px;
+  height: 28px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.buscar_id button{
+  width: 100px;
+  height: 32px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
