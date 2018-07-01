@@ -2,6 +2,6 @@
 php
 
 Neste repositório trago os seguintes códigos:
-1 - Conexão com banco em PDO.
+1 - Conexão com banco em PDO. obs: sem class.
 2 - Inserção dados através de um cadastro em um formulário
 3 - Listagem dos dados cadastrados no banco
