@@ -1,16 +1,15 @@
 <?php
 
-  require("index.php");
+require "conexao.php";
 
-  $nome = $_POST['inputNome'];
-  $email = $_POST['inputEmail'];
-  $senha = md5($_POST['inputSenha']);
+$nome = $_POST['inputNome'];
+$email = $_POST['inputEmail'];
+$senha = md5($_POST['inputSenha']);
 
-  $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
-  if ($conn->query($sql)==TRUE) {
-    echo "CADASTRADO!";
-  }else{
-    echo "ERRO!";
-  }
+$sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
-?>
+if ($conn->query($sql) == TRUE) {
+  echo "CADASTRADO";
+}else{
+  echo "ERRO";
+}
