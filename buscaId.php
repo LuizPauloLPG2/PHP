@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>PHP</title>
   </head>
   <body>
-    <?php require("index.php"); ?>
+    <?php require "conexao.php"; ?>
     <div class="">
 
     <table border="1" align="center">
@@ -14,17 +14,22 @@
         <td>Nome</td>
         <td>E-mail</td>
       </tr>
-    <?php
-      $id = $_GET['id'];
-      $sql = "SELECT id, nome, email FROM usuarios WHERE id = '$id'";
-      $resultado =  $conn->query($sql);
-        while ($linha = $resultado->fetch()) { ?>
-      <tr>
-        <td><?php echo $linha["id"]; ?></td>
-        <td><?php echo $linha["nome"]; ?></td>
-        <td><?php echo $linha["email"]; ?></td>
-      </tr>
-    <?php   }    ?>
+      <?php
+      
+        $id = $_GET['id'];
+
+        $sql = "SELECT id, nome, email FROM usuarios WHERE id = '$id'";
+
+        $resultado =  $conn->query($sql);
+      
+        while ($linha = $resultado->fetch()) { 
+      ?>
+        <tr>
+          <td><?php echo $linha["id"]; ?></td>
+          <td><?php echo $linha["nome"]; ?></td>
+          <td><?php echo $linha["email"]; ?></td>
+        </tr>
+      <?php } ?>
     </table>
   </div>
 
